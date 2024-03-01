@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "flip",
+    "version": "0.1.2",
+    "owner": "flip-app",
+    "slug": "flip",
+    "icon": "./assets/icon.png",
+    "entryPoint": "./index.js",
+    "sdkVersion": "46.0.6",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c19d393a-a366-4fbf-b39b-f451ebb9efdb"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "com.flipplay.flip",
+      "permissions": []
+    },
+    "ios": {},
+    "extra": {
+      "termsAndConditionsUrl": "https://goflipapp.com/?page_id=306",
+      "eas": {
+        "projectId": "c19d393a-a366-4fbf-b39b-f451ebb9efdb"
+      }
+    }
+  }
+}

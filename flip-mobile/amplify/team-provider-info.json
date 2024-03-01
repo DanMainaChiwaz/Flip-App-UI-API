@@ -1,0 +1,27 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-flipmobileexpo-staging-200627-authRole",
+      "UnauthRoleArn": "arn:aws:iam::150924946363:role/amplify-flipmobileexpo-staging-200627-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::150924946363:role/amplify-flipmobileexpo-staging-200627-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-flipmobileexpo-staging-200627-deployment",
+      "UnauthRoleName": "amplify-flipmobileexpo-staging-200627-unauthRole",
+      "StackName": "amplify-flipmobileexpo-staging-200627",
+      "StackId": "arn:aws:cloudformation:us-east-1:150924946363:stack/amplify-flipmobileexpo-staging-200627/df355550-3e9f-11ed-b843-1226ba888c4b",
+      "AmplifyAppId": "dzl05ye14cn06"
+    },
+    "categories": {
+      "auth": {
+        "userPoolGroups": {},
+        "flipmobileexpoamplifyauth": {}
+      },
+      "function": {
+        "AdminQueries4b3234a9": {
+          "deploymentBucketName": "amplify-flipmobileexpo-staging-200627-deployment",
+          "s3Key": "amplify-builds/AdminQueries4b3234a9-772f65522f62474e4b41-build.zip"
+        }
+      }
+    }
+  }
+}

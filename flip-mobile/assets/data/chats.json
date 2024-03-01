@@ -1,0 +1,308 @@
+{
+  "chats": [
+    {
+      "id": 1,
+      "isRead": true,
+      "members": [
+        {
+          "userId": "1",
+          "firstName": "Angela",
+          "lastName": "Dallas",
+          "photoUrl": ""
+        },
+        {
+          "userId": "2",
+          "firstName": "Torin",
+          "lastName": "Robert",
+          "photoUrl": ""
+        }
+      ],
+      "messages": [
+        {
+          "id": 0,
+          "type": "timestamp",
+          "senderId": "1",
+          "dateSent": "2015-03-25T07:40:00Z"
+        },
+        {
+          "id": 1,
+          "type": "message",
+          "content": "Message 1",
+          "senderId": "1",
+          "dateSent": "2015-03-25T08:40:00Z"
+        },
+        {
+          "id": 2,
+          "type": "message",
+          "content": "Message 2",
+          "senderId": "2",
+          "dateSent": "2015-03-25T13:10:00Z"
+        },
+        {
+          "id": 3,
+          "type": "message",
+          "content": "Message 3",
+          "senderId": "1",
+          "dateSent": "2015-03-25T14:20:00Z"
+        },
+        {
+          "id": 4,
+          "type": "timestamp",
+          "senderId": "2",
+          "dateSent": "2015-03-27T11:20:00Z"
+        },
+        {
+          "id": 5,
+          "type": "message",
+          "content": "Message 4",
+          "senderId": "2",
+          "dateSent": "2015-03-27T15:30:00Z"
+        },
+        {
+          "id": 6,
+          "type": "message",
+          "content": "Message 5",
+          "senderId": "2",
+          "dateSent": "2015-03-27T18:50:00Z"
+        },
+        {
+          "id": 7,
+          "type": "event",
+          "status": "declined",
+          "title": "Tennis Match",
+          "eventLeader": [
+            {
+              "userId": "1",
+              "firstName": "Angela",
+              "lastName": "Dallas",
+              "photoUrl": ""
+            }
+          ],
+          "date": "2022-09-14T20:18:50.380Z",
+          "startTime": "2022-09-14T20:12:50.380Z",
+          "endTime": "2022-09-14T20:18:50.380Z",
+          "location": "Central Park, 76th St",
+          "description": "Let's have fun!",
+          "connections": [
+            {
+              "userId": "6",
+              "firstName": "Tony",
+              "lastName": "McKay"
+            },
+            {
+              "userId": "7",
+              "firstName": "John",
+              "lastName": "Smith"
+            }
+          ],
+          "senderId": "2",
+          "dateSent": "2015-03-27T19:50:00Z"
+        },
+        {
+          "id": 8,
+          "type": "timestamp",
+          "senderId": "2",
+          "dateSent": "2015-03-29T15:30:00Z"
+        },
+        {
+          "id": 9,
+          "type": "message",
+          "content": "Message 6",
+          "senderId": "2",
+          "dateSent": "2015-03-29T15:30:00Z"
+        },
+        {
+          "id": 10,
+          "type": "message",
+          "content": "Message 7",
+          "senderId": "2",
+          "dateSent": "2015-03-29T18:50:00Z"
+        },
+        {
+          "id": 11,
+          "type": "message",
+          "content": "Message 8",
+          "senderId": "2",
+          "dateSent": "2015-03-29T18:55:00Z"
+        },
+        {
+          "id": 12,
+          "type": "message",
+          "content": "Message 9",
+          "senderId": "1",
+          "dateSent": "2015-03-29T19:50:00Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "isRead": false,
+      "members": [
+        {
+          "userId": "1",
+          "firstName": "Angela",
+          "lastName": "Dallas",
+          "photoUrl": ""
+        },
+        {
+          "userId": "3",
+          "firstName": "Gayla",
+          "lastName": "Evans",
+          "photoUrl": ""
+        }
+      ],
+      "messages": [
+        {
+          "id": 0,
+          "type": "timestamp",
+          "senderId": "1",
+          "dateSent": "2015-03-25T07:40:00Z"
+        },
+        {
+          "id": 1,
+          "content": "Message 1",
+          "senderId": "1",
+          "dateSent": "2015-03-25T12:00:00Z"
+        },
+        {
+          "id": 2,
+          "content": "Message 2",
+          "senderId": "3",
+          "dateSent": "2015-03-25T13:00:00Z"
+        },
+        {
+          "id": 3,
+          "content": "Message 3",
+          "senderId": "1",
+          "dateSent": "2015-03-25T14:00:00Z"
+        },
+        {
+          "id": 4,
+          "content": "Message 4",
+          "senderId": "3",
+          "dateSent": "2015-03-25T15:00:00Z"
+        },
+        {
+          "id": 5,
+          "content": "Message 5",
+          "senderId": "3",
+          "dateSent": "2015-03-25T16:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "isRead": true,
+      "members": [
+        {
+          "userId": "1",
+          "firstName": "Angela",
+          "lastName": "Dallas",
+          "photoUrl": ""
+        },
+        {
+          "userId": "6",
+          "firstName": "Tony",
+          "lastName": "McKay",
+          "photoUrl": ""
+        }
+      ],
+      "messages": [
+        {
+          "id": 0,
+          "type": "timestamp",
+          "senderId": "1",
+          "dateSent": "2015-03-25T07:40:00Z"
+        },
+        {
+          "id": 1,
+          "content": "Message 1",
+          "senderId": "1",
+          "dateSent": "2015-03-25T12:00:00Z"
+        },
+        {
+          "id": 2,
+          "content": "Message 2",
+          "senderId": "6",
+          "dateSent": "2015-03-25T13:00:00Z"
+        },
+        {
+          "id": 3,
+          "content": "Message 3",
+          "senderId": "1",
+          "dateSent": "2015-03-25T14:00:00Z"
+        },
+        {
+          "id": 4,
+          "content": "Message 4",
+          "senderId": "6",
+          "dateSent": "2015-03-25T15:00:00Z"
+        },
+        {
+          "id": 5,
+          "type": "timestamp",
+          "senderId": "1",
+          "dateSent": "2015-09-11T07:40:00Z"
+        },
+        {
+          "id": 6,
+          "content": "Message 5",
+          "senderId": "6",
+          "dateSent": "2022-09-11T16:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "isRead": true,
+      "isGroup": true,
+      "groupName": "Soccer Team",
+      "members": [
+        {
+          "userId": "1",
+          "firstName": "Angela",
+          "lastName": "Dallas",
+          "photoUrl": ""
+        },
+        {
+          "userId": "3",
+          "firstName": "Gayla",
+          "lastName": "Evans",
+          "photoUrl": ""
+        },
+        {
+          "userId": "4",
+          "firstName": "John",
+          "lastName": "Smith",
+          "photoUrl": "something"
+        }
+      ],
+      "messages": [
+        {
+          "id": 0,
+          "type": "timestamp",
+          "senderId": "1",
+          "dateSent": "2015-03-25T07:40:00Z"
+        },
+        {
+          "id": 1,
+          "content": "Message 1",
+          "senderId": "1",
+          "dateSent": "2015-03-25T12:00:00Z"
+        },
+        {
+          "id": 2,
+          "content": "Message 2",
+          "senderId": "3",
+          "dateSent": "2015-03-25T13:00:00Z"
+        },
+        {
+          "id": 3,
+          "content": "Message 3",
+          "senderId": "1",
+          "dateSent": "2015-03-25T14:00:00Z"
+        }
+      ]
+    }
+  ]
+}

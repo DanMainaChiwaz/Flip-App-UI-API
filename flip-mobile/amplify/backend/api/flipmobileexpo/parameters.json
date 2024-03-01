@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "flipmobileexpo",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-09-30T04:13:57.065Z"
+}

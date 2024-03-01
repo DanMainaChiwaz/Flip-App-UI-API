@@ -1,0 +1,33 @@
+image: node:16.13.1
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: Build and test
+          caches:
+            - node
+          script:
+            - npm ci
+            - npx jest --ci
+      - step:
+          name: Update EAS Branch
+          deployment: develop
+          caches:
+            - node
+          script:
+            - npm ci
+            - npm i -g @aws-amplify/cli
+            - ./amplify-pull.sh
+            - npx eas-cli update --branch $EAS_BRANCH --message "Updating $EAS_BRANCH branch. Build $BITBUCKET_BUILD_NUMBER"
+    preview:
+      - step:
+          name: Build app
+          deployment: preview
+          caches:
+            - node
+          script:
+            - npm ci
+            - npm i -g @aws-amplify/cli
+            - ./amplify-pull.sh
+            - npx eas-cli build --platform android --profile preview --non-interactive --no-wait --auto-submit

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "totemic-creek-344404",
+  "private_key_id": "b4fd24f781ba5e073d90c96c4bdec757a8fce624",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDYwaPbQL+epmsv\nBQD6iPtKodn+QnVxT8V8SioERainU5cE4dxmwpXm2Kzg7dPqtIVUoYMn+izsoD3B\n8IqyD5KUOUo5HMlOMKICYymhsW23VD6Fzedvii2/7FZYizgqgIphpdzD3vg3WR2t\nZBdC1J09+ZGf9/s06FVFeu9kYqebG/k0/8DZ9/bYnUVLjOzlTfJHqGzRzV6OmvMz\niKfcNYpw/rVt0iniLMxeVjEd+0W4kk1rNGw3KtWTAdtfhG38BFHsBoBIOVKCgoO3\nUW0sx/sXlBc+yrmSQu1sw3V2nWTDRPhdvx4IIB9Cwh3kS/H+gneMUsFeyXm0gLeP\nFoCAngEpAgMBAAECggEAaFkgRubu2LOJGgOwquvS/eTZCxx3aWtbyS/y9keKn7MQ\nGtuYvSej/pQE9evIf08UeN+gQlif0/J4iKsCOiJhEFZcMw52otuqwrd2TU8bYIx/\n5O5xIjNFPwXJs6qiCWQEOmoc03a9y/ds4BI1WIj+gd1pi7dYCepnUqGSKaOMyJBV\n6QPwjZMTTxnGFFlY4cm/MSEhzbe1mAIEJFTo1uND6sah4daOvirky1xDHfLX1Wzg\n+Mi+2ijhYKzkn1EvNXZ9x1MURbmQg2n5iI30I3sdI7GSx8rVgimJYM1t/kPe2A02\nRD/ZGXp9pz4hYL91yhkFCYH+zNkw18UiGbajcMV1eQKBgQD2bPjtN41TvBEdfRay\nhid1q91GOiJV/MGE/Ejh6Jwqws8GeDPTRwAubBDLa9ryV+3tfeLg6mOX5wjVOZJb\nLpED0K/A2JY7DKhOlfvWVEIMNRXrxr+FMLj0vvYLTA34pTSrDNNQImZbg3O2Vfbf\n5xmV1YgFwh0pbkSUPb4TNhbxMwKBgQDhLZFarF4RwQcfj8K76YoWaZSykfGIzq0D\nQLvs/473Bjxu98HO9wM+U+Qz351AkRwm4zoUwwDB5x9UCruCi3PlPdlrrP9MY4sB\nlcrIo3aHDNOTNGyH5kb4BuvR5kG+wIpBIhHASZCd8A68eJiPNusWb2lxNw1YM8BN\nMiYYCGw8MwKBgQDveh07ItZkPor/dlW9bmQglcG3Ar3lhHloTGhjqlNBtwnLxrrO\notxJQNndZlZjVxIwzzrRyta4g1xxIr7Zf9qLs51pMtJkVjumC1mvAzkgdeJ0vDPZ\nMu07Y+zmM6YMMjiJ1i/xW0zPuGKWGtqM4yBZHSdQOUFvxuo8ifgS4WjQQwJ/TWdc\nj86wh2nTCQZh6jZdQVcJxlhkrqJc1sFp2A4BFukN3RdNh9dhRguQZkR3yboX80Yo\nsPpXSFAqdLk7u6Q0MpkQI/NTzu5o2iKjklSeac3+7JsYs550xs2aQozkDK4i2EDd\n2TtwetoKNr89sf0u0od5t3E1JRyk/eQ/NAOxMQKBgEKAblko6St4jxdxLhvZsbik\n9FP5tsng0eWTf95oXbFyCtTQ8yT8hHTnfQgYefOGgDER33wh0efTbhsDAX17ixAo\nm0OMRZ8UTJ0B540DhroIwTW5KwUvE0mBxjYeV1e6JlNty/1ttW1mZaKDxfnkKZWw\nLVoiGwgrYt0HbvidOAEm\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-account-expo-deploy@totemic-creek-344404.iam.gserviceaccount.com",
+  "client_id": "114349640789817879931",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account-expo-deploy%40totemic-creek-344404.iam.gserviceaccount.com"
+}

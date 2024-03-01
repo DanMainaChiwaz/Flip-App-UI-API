@@ -1,0 +1,21 @@
+{
+  "rootDir": "./src",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["assets/*"],
+      "components": ["src/components/index"],
+      "models": ["src/models/index"],
+      "navigation/*": ["src/navigation/*"],
+      "reducers/*": ["src/store/reducers/*"],
+      "screens/*": ["src/screens/*"],
+      "src/*": ["src/*"],
+      "store": ["src/store/index"],
+      "types/*": ["src/types/*"],
+      "utils/*": ["src/utils/*"]
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}

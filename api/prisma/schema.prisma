@@ -1,0 +1,180 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// creation of schemas starts Here 
+
+// snipppets here 
+
+// end of the snippets 
+
+model User {
+  id                       Int            @id @default(autoincrement())
+  firstName                String?
+  lastName                 String?
+  username                 String?        @unique
+  email                    String         @unique
+  is_email_verified        Boolean        @default(false)
+  phonenumber              String?        @unique
+  is_phone_number_verified Boolean        @default(false)
+  bio                      String?
+  password                 String?
+  gender                   String?
+  photoUrl                 String?
+  bannerId                 String?
+  isConfigured             Boolean?
+  geohashLocation          String?
+  location                 Json?
+  above_18                 Boolean        @default(false)
+  accept_terms             Boolean        @default(false)
+  connectionsSent          Connection[]   @relation("SentConnections")
+  connectionsReceived      Connection[]   @relation("ReceivedConnections")
+  activities               UserActivity[]
+  events                   Event[]
+  createdAt                DateTime       @default(now())
+  updatedAt                DateTime?      @updatedAt
+  role                     Role           @default(USER)
+  otp                      Otp?
+  messagesSent   Chat[]  @relation("messagesSent")
+  messagesReceived   Chat[]  @relation("messagesReceived")
+  eventAttendees EventAttendee[] 
+  posts Post[]
+
+  @@map("users")
+}
+
+// this defines the user role => will change basing on the client requirements
+enum Role {
+  USER
+  ADMIN
+}
+
+model Otp {
+  id       Int  @id @default(autoincrement())
+  otpPhone Int?
+  isOtpPhoneUsed Boolean @default(false)
+  otpEmail Int?
+  isOtpEmailUsed Boolean @default(false)
+  user     User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId   Int  @unique
+}
+
+model Location {
+  id   Int    @id @default(autoincrement())
+  lat  Float?
+  long Float?
+}
+
+model Connection {
+  id              Int     @id @default(autoincrement())
+  status          Boolean @default(false)
+  sendingUser     User    @relation("SentConnections", fields: [sendingUserId], references: [id])
+  sendingUserId   Int
+  receivingUser   User    @relation("ReceivedConnections", fields: [receivingUserId], references: [id])
+  receivingUserId Int
+}
+
+model UserActivity {
+  id            Int        @id @default(autoincrement())
+  activity_id   Int
+  activity_name String     @default(" ")
+  activity      Activity   @relation(fields: [activity_id], references: [id], onDelete: Cascade)
+  skillLevel    SkillLevel @default(Newbie)
+  playStyle     playStyle  @default(Casual)
+  userId        Int
+  user          User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// nature   String?
+
+model Activity {
+  id   Int    @id @default(autoincrement())
+  name String
+
+  UserActivity UserActivity[]
+}
+
+enum playStyle {
+  Competitive
+  Casual
+}
+
+model Event {
+  id          Int             @id @default(autoincrement())
+  title       String?
+  description String?
+  status      String?
+  Date        String?
+  isPublic Boolean @default(false)
+  startTime   String?
+  endTime     String?
+  location    String?
+  attendees   EventAttendee[]
+
+  user   User? @relation(fields: [hostId], references: [id], onDelete: Cascade)
+  hostId Int?
+}
+
+enum flag {
+  Public
+  Private
+}
+
+model EventAttendee {
+  id     Int                 @id @default(autoincrement())
+  status EventAttendeeStatus @default(Unregistered)
+
+  attendeeId Int?
+  eventId    Int?
+  event      Event? @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  user       User?  @relation(fields: [attendeeId], references: [id], onDelete: Cascade)
+}
+
+enum EventAttendeeStatus {
+  Unregistered
+  Registered
+}
+
+// end of schema creation 
+
+// skill level 
+enum SkillLevel {
+  Advanced_Level
+  Intermediate_level
+  Beginner_level
+  Newbie
+}
+ 
+
+// models relating to chats  
+model Chat{
+  id Int @id @default(autoincrement())
+  date DateTime @default(now())
+  sender User @relation("messagesSent",fields: [senderId], references: [id], onDelete: Cascade)
+  senderId Int 
+  receiver User @relation("messagesReceived",fields: [receiverId], references: [id], onDelete: Cascade)
+  receiverId Int 
+  content String 
+  isRead Boolean @default(false)
+} 
+
+model Post{
+  id Int @id @default(autoincrement()) 
+  title String 
+  description String 
+  date String?
+  time String?
+  activity String?
+  location String?
+  userId Int 
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
